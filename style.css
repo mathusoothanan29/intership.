@@ -4,6 +4,7 @@ body
  color: white;
  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  font-size: large;
+ border: 2px solid aqua;
 }
 .hearder
 {
@@ -26,39 +27,128 @@ body
     font-weight: 500;
     margin-left: 35px;
 }
+.bar
+{
+  padding-left: 60%;
+  padding-top: 10px;
+}
 .btn
 {
-    display: inline-block;
+    
     padding: 12px 28px;
     background: aqua;
     margin-left: 10%;
-    background-color: rgb(27, 27, 241);
-    border-radius: 50%;
-    box-shadow: 0 0 10px aqua;
+    background-color: aqua;
+    border-radius: 50px;
+    font-size: larger;
+    cursor: pointer;
 }
 
 img
 {
     float: right;
     padding: 13% 150px;
-    border-radius: 50%;
+    border-radius: 50%;   
+    position: relative;
+    top: 20px;
+    left: 20px;     
+    }
+   @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  .img {
+    animation: drop-in 1000ms;
+    display: inline-block;
+
+  }
+
+.img2
+{
+    padding-right: 1000px;
+
 }
 
  h1 span{
     color: aqua;
+    display: inline-block;
+    
 }
+span{
+  color: red;
+}
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  h1 span{
+    animation: slide-in 1000ms;
+    animation-iteration-count: 7;
+  }
+  
  h1
 {
  padding-left: 10%;
  padding-top: 13%; 
+  
 }
- p
+.info
 {
- padding-left: 20%;
+ padding-left: 50%; 
 }
-.btn a:hover
+.a1
 {
-    background: aqua;
-    color: black;
+    padding-left: 40%;
+    padding-bottom: 5%;
+}
 
+
+.form {
+    background-color: #081b29;
+    width: 90%;
+    padding: 100px;
+    margin: 10px;
+    display: block;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 2px solid rgb(238, 245, 245);
+}
+
+input[type=text], select,textarea {
+    width: 50%;
+    padding: 20px;
+    margin: 20px ;
+    border: 1px solid #080808;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 30px;
+}
+.btn1 ,button
+{
+    padding-top: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+button:hover {
+    background-color: whitesmoke;
 }
