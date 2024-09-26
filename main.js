@@ -1,7 +1,5 @@
 
 
-
-
 function validationError(){
     
     const nameValue=document.getElementById("fname").value;

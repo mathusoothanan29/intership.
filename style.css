@@ -72,10 +72,9 @@ img
 
   }
 
-.img2
+.img3
 {
-    padding-right: 1000px;
-
+  padding-left: 40%;
 }
 
  h1 span{
@@ -99,7 +98,7 @@ span{
 
   h1 span{
     animation: slide-in 1000ms;
-    animation-iteration-count: 7;
+    animation-iteration-count: 2;
   }
   
  h1
@@ -110,12 +109,13 @@ span{
 }
 .info
 {
- padding-left: 50%; 
+ float: left;
+ display: inline-block;
 }
 .a1
 {
     padding-left: 40%;
-    padding-bottom: 5%;
+    padding-bottom: 30%;
 }
 
 
@@ -131,7 +131,7 @@ span{
 }
 
 input[type=text], select,textarea {
-    width: 50%;
+    width: 100%;
     padding: 20px;
     margin: 20px ;
     border: 1px solid #080808;
@@ -142,7 +142,7 @@ input[type=text], select,textarea {
 }
 .btn1 ,button
 {
-    padding-top: 10px;
+    top: 200%;
     border-radius: 50px;
     padding: 10px;
     cursor: pointer;

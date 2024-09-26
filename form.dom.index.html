@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .form {
+            background-color: rgba(173, 162, 212, 0.822);
+            width: 100%px;
+            padding: 100px;
+            margin: 8px auto;
+            display: block;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=text], select,textarea {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-flex;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0a0202;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+        @media (max-width: 1000px) {
+            .form {
+                width: 80%;
+                padding: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form {
+                width: 90%;
+                padding: 30px;
+            }
+            
+            input[type=text], select {
+                padding: 10px;
+            }
+            
+            button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 1000px) {
+        .form {
+            width: 80%;
+            padding: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .form {
+            width: 90%;
+            padding: 30px;
+        }
+        
+        input[type=text], select {
+            padding: 10px;
+        }
+        
+        button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="form">
+        <form action="action_page.php">
+            <label for="fname">First Name:</label><br>
+           <input type="text" id="fname" name="firstname"><br>
+      
+            <label for="password">password:</label><br>
+           <input type="text" id="password" name="password"><br>
+      
+            <button type="submit">submit</button>
+            
+        </form>
+
+    </div>
+</body>
+</html>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector("form");
+        
+        form.addEventListener("submit", function(event) {
+            const fname = document.getElementById("fname").value;
+            const password = document.getElementById("password").value;
+            
+            if (!fname || !password) {
+                alert("Please fill in all fields.");
+                event.preventDefault();
+            } else {
+                // Add any additional validation or processing here
+                alert("submitted successfully!");
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>

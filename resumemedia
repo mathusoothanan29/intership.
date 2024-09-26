@@ -37,7 +37,32 @@
         h1, h2, p {
             margin: 10px 0;
         }
+        .form  {
+            background-color: rgba(52, 139, 240, 0.425);
+            width: 100%px;
+            padding: 80px;
+            margin: 8px auto;
+            display: block;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=text], select,textarea {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-flex;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
         
+        button {
+            padding:  20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0a0202;
+            color: white;
+            cursor: pointer;
+        }
 
         button:hover {
             background-color: #333;
@@ -82,6 +107,7 @@
 </head>
 <body>
     <div>
+        <button id="mode-toggle">Mode</button>
         <center>
             <h1>Resume</h1>
         </center>
@@ -92,30 +118,7 @@
         <center><h4>Dindigul <i class="fa-solid fa-plane"></i></h4></center>
     </div>
     <hr>
-    <h1>ADDITIONAL QUALIFICATION</h1>
-    <ul>
-        <li>Certification for Basic UI/UX </li>
-        <li>Basic in Tally </li>
-        <li>Basic in Java</li>
-        <li>Basic in Python</li>
-    </ul>
-    <hr>
-    <h1>STRENGTH</h1>
-    <ul>
-        <li><p>Hardworking and interested in learning new things<br> I give my full potential to do any job or work
-            <br> I am slightly interested in editing</p></li>
-    </ul>
-    <hr>
-    <h1>PERSONAL DETAILS</h1>
-    <ol>
-        <li>Name: Mathusoothanan S </li>
-        <li>DOB: 29/03/2003 </li>
-        <li>Age: 21 </li>
-        <li>Gender: </li>
-        <li>Languages: Tamil, English, French</li>
-    </ol>
-    <h1>EDUCATION QUALIFICATION</h1>
-    <hr>
+    <h1>EDUCATION QUALIFICATION <i class="fa-solid fa-pen-nib"></i></h1>
     <table style="width: 50%;">
         <tr>
             <th>QUALIFICATION</th>
@@ -144,11 +147,58 @@
         </tr>
     </table>
     <hr>
-    <h1>DECLARATION</h1>
+    <h1>ADDITIONAL QUALIFICATION <i class="fa-solid fa-pen-nib"></i></h1>
+    <ul>
+        <li>Certification for Basic UI/UX </li>
+        <li>Basic in Tally </li>
+        <li>Basic in Java</li>
+        <li>Basic in Python</li>
+    </ul>
+    <hr>
+    <h1>STRENGTH<i class="fa-solid fa-pen-nib"></i></h1>
+    <ul>
+        <li><p>Hardworking and interested in learning new things<br> I give my full potential to do any job or work
+            <br> I am slightly interested in editing</p></li>
+    </ul>
+    <hr>
+    <h1>PERSONAL DETAILS<i class="fa-solid fa-pen-nib"></i></h1>
+    <ol>
+        <li>Name: Mathusoothanan S </li>
+        <li>DOB: 29/03/2003 </li>
+        <li>Age: 21 </li>
+        <li>Gender: </li>
+        <li>Languages: Tamil, English, French</li>
+    </ol>
+    <hr>
+    <h1>DECLARATION<i class="fa-solid fa-pen-nib"></i></h1>
     <p>I assure that if I get this job, I would do it sincerely <i class="fa-solid fa-hand"></i></p>
     <hr>
-    <h1>Yours sincerely</h1>
+    <h1>Yours sincerely<i class="fa-solid fa-pen"></i></h1>
     <p>Mathu Soothanan S</p>
     <hr>
+    <center style="font-size: xx-large;">CONTACT</center>
+</body>
+<body>
+<div class="form">
+    <form action="action_page.php">
+        <label for="fname">First Name:</label><br>
+       <input type="text" id="fname" name="firstname"><br>
+  
+        <label for="email">Email:</label><br>
+       <input type="text" id="email" name="email"><br>
+  
+      <label for="feedback">Feedback:</label><br>
+       <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        <button type="submit">Send</button>
+        <ul><li>Thank you for visiting my webpage resume, sir/madam</li></ul>
+    </form>
+</div>
+
+<script>
+    const mode = document.getElementById('mode-toggle');
+    mode.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
 </body>
 </html>
