@@ -25,13 +25,13 @@ body {
 }
 .btn {  
   padding: 12px 28px;
-  margin-left: 10%;
   background-color: aqua;
   border-radius: 50px;
   font-size: larger;
   cursor: pointer;
   color: rgb(10, 12, 12);
   text-decoration: none;
+  margin-left: 5%;
 }
 img {
   float: right;
@@ -245,4 +245,8 @@ body.light-mode {
 body.dark-mode {
   background-color: #050505;
   color: white;
+}
+h3
+{
+ padding-left: 5%;
 }
