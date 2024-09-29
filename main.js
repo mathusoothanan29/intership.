@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener('click', () => {
         body.classList.toggle('light-mode');
         body.classList.toggle('dark-mode');
-        
+        git
         if (body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'dark');
         } else {
