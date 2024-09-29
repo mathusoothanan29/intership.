@@ -41,3 +41,51 @@ if(isValid){
 }
 
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleMode = document.getElementById('toggle-mode');
+
+    toggleMode.addEventListener('click', () => {
+        document.body.classList.toggle('light');
+        
+        const links = document.querySelectorAll('.bar a');
+        const btns = document.querySelectorAll('.btn');
+
+        links.forEach(link => {
+            link.classList.toggle('light');
+        });
+
+        btns.forEach(btn => {
+            btn.classList.toggle('light');
+        });
+        
+        if (document.body.classList.contains('light')) {
+            toggleMode.textContent = 'Mode';
+        } else {
+            toggleMode.textContent = 'Mode';
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById('toggle-mode');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
+        
+        if (body.classList.contains('light-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.add('light-mode');
+    }
+});

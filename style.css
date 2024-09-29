@@ -1,118 +1,112 @@
-body
-{
- background-color: #081b29;
- color: white;
- font-family: 'Times New Roman', Times, serif;
- font-size: x-large;
-
+body {
+  color: rgb(248, 246, 246);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+  background-color: #081b29;
 }
-.hearder
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.bar a {    
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 35px;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;  
+  padding: 10px; 
+  color: rgb(234, 238, 238);
 }
-.bar a
-{    
-    font-size: 18px;
-    color:rgb(4, 6, 7);
-    text-decoration: none;
-    font-weight: 800;
-    margin-left: 35px;  
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: large;
-}
-.bar
-{
-  padding-left: 60%;
-  padding-top: 10px;
-  background-color: rgb(106, 248, 236);
+.bar {
   border-radius: 40px;
-  border-bottom: 2px solid rgb(9, 10, 10);
-  top: 10px;
+  padding: 10px;
+  font-size: large;
+  margin-left: 50%;
+}
+.bar a:hover {
+  background-color: rgb(7, 7, 7);
+  border-radius: 40px;
+}
+.btn {  
+  padding: 12px 28px;
+  margin-left: 10%;
+  background-color: aqua;
+  border-radius: 50px;
+  font-size: larger;
+  cursor: pointer;
+  color: rgb(10, 12, 12);
+  text-decoration: none;
+  display: inline;
+}
+img {
+  float: right;
+  padding: 13% 150px;
+  border-radius: 50%;   
+  position: relative;
+  bottom: 80%;
+  left: 50px;     
 }
 
-.btn
-{  
-    padding: 12px 28px;
-    background: aqua;
-    margin-left: 10%;
-    background-color: aqua;
-    border-radius: 50px;
-    font-size: larger;
-    cursor: pointer;
-}
-
-img
-{
-    float: right;
-    padding: 13% 150px;
-    border-radius: 50%;   
-    position: relative;
-    bottom: 50px;
-    left: 50px;     
-    }
-   @keyframes drop-in {
-    from {
-      transform:
-        rotate(-30deg) translateY(-100%);
+@keyframes drop-in {
+  from {
+      transform: rotate(-30deg) translateY(-100%);
       opacity: 0;
-    }
-    to {
-      transform:
-        rotate(0deg) translateY(0%);
+  }
+  to {
+      transform: rotate(0deg) translateY(0%);
       opacity: 1;
-    }
   }
-
-  .img {
-    animation: drop-in 1000ms;
-
-  }
-
-.img3
-{
-  padding-left: 40%;
 }
 
- h1 span{
-    color: aqua;
-    display: inline-block;
-    
+.img {
+  animation: drop-in 1000ms;
 }
-span{
-  color: red;
+
+h1 span {
+  color: aqua;
 }
+
 @keyframes slide-in {
-    from {
+  from {
       transform: translateX(-100%);
       opacity: 0.25;
-    }
-    to {
+  }
+  to {
       transform: translateX(0%);
       opacity: 1;
-    }
   }
+}
 
-  h1 span{
-    animation: slide-in 1000ms;
-    animation-iteration-count: 1;
-  }
-  
- h1
+h1 span {
+  animation: slide-in 1000ms;
+  animation-iteration-count: 1;
+}
+
+h1 {
+  padding-left: 10%;
+  padding-top: 80px;
+}
+body.light {
+  background-color: black;
+  color: #faf8f8;
+}
+
+.bar a.light {
+  color: #fafafa;
+}
+
+.btn.light {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.bar.light a:hover {
+  background-color: #f0f0f0;
+}
+
+h3
 {
- padding-left: 10%;
- padding-top: 80px;
+  padding-left: 10%;
 }
 
 .info
 {
- float: left;
  display: inline-block;
 }
 .a1
@@ -120,94 +114,92 @@ span{
     padding-left: 40%;
     padding-bottom: 30%;
 }
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #fcf9f9;
+}
+
+.dark-mode {
+  background-color: #081b29;
+  color: #ffffff;
+}
+
 .form {
-    background-color: #081b29;
-    width: 90%;
-    padding: 100px;
-    margin: 10px;
-    display: block;
-    border-radius: 4px;
-    padding-left: 10px;
-    border: 2px solid rgb(238, 245, 245);
+  background-color: #081b29;
+  width: 90%;
+  padding: 100px;
+  margin: 10px;
+  display: block;
+  border-radius: 4px;
+  padding-left: 10px;
+  border: 2px solid rgb(238, 245, 245);
 }
 
-input[type=text], select,textarea {
-    width: 100%;
-    padding: 20px;
-    margin: 20px ;
-    border: 1px solid #080808;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 30px;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #080808;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-.btn1 ,button
-{
-    top: 200%;
-    border-radius: 50px;
-    padding: 10px;
-    cursor: pointer;
-    color: black;
+.btn1, button {
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  color: black;
 }
-
 button:hover {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
+}
+.dark-mode input, .dark-mode textarea {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444444;
 }
 p
 {
  padding-left: 10%;
  display: inline-block;
 }
+ul
+{
+  padding-left: 10%;
+}
 .img4
 {
-    
-    border-radius: 50%;   
-    position: relative;
-    bottom: 400px;  
-    right: 10px;  
-    
-    }
-    @keyframes fade-in-out {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-    
-    .img4 {
-      animation: fade-in-out 1000ms;
-    }
-.p
+  display: block;
+  display: inline;
+}
+.my
 {
- display: inline-block;
- padding-bottom: 400%;
+  padding-right: 40%;
+}
+body.bar.light
+{
+ background-color: #f0f3f5;
+ color: aliceblue;
 }
 table, th, td {
   border-collapse: collapse;
   border: 2px solid rgb(236, 234, 234);
 }
-
-h1, h2, p {
-  margin: 10px 0;
-  padding-bottom: 5px;
-}
-
 button {
-  padding: 10px;
+  padding: 8px 10%;
   cursor: pointer;
-  border: none;
-  background-color: #007bff;
+  background-color: #20dada;
   color: white;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-size: large;
 }
-
 button:hover {
   background-color: #0056b3;
 }
-
 @media (max-width: 1000px) {
   .form {
       width: 80%;
@@ -229,4 +221,41 @@ button:hover {
       padding: 10px;
       font-size: 14px;
   }
+}
+.c
+{
+  padding-left: 38%;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  padding-left: 15%;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: rgb(245, 248, 248);
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+.socialIcons a:hover{
+  background-color: #e4dddd;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: rgb(10, 10, 10);
+  transition: 0.5s;
+}
+body.light-mode {
+  background-color: #081b29;
+  color: rgb(241, 241, 241);
+}
+body.dark-mode {
+  background-color: #050505;
+  color: white;
 }
