@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         if (document.body.classList.contains('light')) {
-            toggleMode.textContent = 'Mode';
+            toggleMode.textContent = 'Darkmode';
         } else {
-            toggleMode.textContent = 'Mode';
+            toggleMode.textContent = 'lightmode';
         }
     });
 });
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener('click', () => {
         body.classList.toggle('light-mode');
         body.classList.toggle('dark-mode');
-        git
+        
         if (body.classList.contains('light-mode')) {
             localStorage.setItem('theme', 'dark');
         } else {
@@ -84,9 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
-        body.classList.add('dark-mode');
+        body.classList.add('darkMode');
     } else {
-        body.classList.add('light-mode');
+        body.classList.add('darkMode');
     }
 });
 

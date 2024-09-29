@@ -5,71 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
     <style>
-body
-{
- background: linear-gradient(#081b29 rgb(68, 140, 235),);
- color: rgb(235, 229, 229);
- font-family: 'Times New Roman', Times, serif;
- font-size: large;
-background-color: #081b29;
-border: 3px solid aqua;
-padding: 10px;
-}
-.bar a
-{    
-    font-size: 20px;
-    text-decoration: none;
-    margin-left: 35px;  
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: larger;  
-    padding: 10px; 
-    color: aliceblue;
-}
-.bar
-{
-  border-radius: 40px;
-  padding: 10px;
-  font-size: large;
-  margin-left: 50%;
-}
-.bar :hover
-{
-  background-color: rgb(8, 8, 8);
-  border-radius: 40px;
-}
+        body {
+            background-color: #081b29;
+            color: rgb(235, 229, 229);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            border: 3px solid aqua;
+            padding: 10px;
+            transition: background 0.3s, color 0.3s;
+        }
 
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .bar a {    
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 35px;  
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;  
+            padding: 10px; 
+            color: aliceblue;
+            transition: background 0.3s;
+        }
+
+        .bar {
+            border-radius: 40px;
+            padding: 10px;
+            font-size: large;
+            margin-left: 47%;
+        }
+
+        .bar a:hover {
+            background-color: rgb(8, 8, 8);
+            border-radius: 40px;
+        }
 
         table, th, td {
             border-collapse: collapse;
             border: 2px solid rgb(236, 234, 234);
             padding: 8px;
         }
+
         h1, h2, h3, p {
             margin: 10px 0;
             padding-bottom: 5px;
         }
+
         hr {
             border: 1px solid rgb(236, 234, 234);
-        }
-        body.light-mode {
-            background-color: #081b29;
-            color: rgb(241, 241, 241);
-        }
-
-        body.light-mode table, body.light-mode th, body.light-mode td {
-            border: 2px solid black;
-        }
-
-        body.dark-mode {
-            background-color: #050505;
-            color: white;
-        }
-        .bar.dark-mode {
-            color: rgb(10, 10, 10);
-        }
-        body.dark-mode table, body.dark-mode th, body.dark-mode td {
-            border: 2px solid rgb(236, 234, 234);
-        }
+        } 
 
         @media (max-width: 1000px) {
             .bar {
@@ -93,98 +80,98 @@ padding: 10px;
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="res.html">Resume</a>
-            <a href="contact.html">contact</a>
-            <a href="#"id=toggle-mode>mode</a>
-      </nav>
+            <a href="contact.html">Contact</a>
+            <a href="#" id="toggle-mode">lightMode</a>
+        </nav>
     </header> 
-        <center>
-            <h1>Resume</h1>
-            <img style="height: 200px; border-radius: 50%;" src="msd.jpg" alt="Mathu Soothanan">
-            <h2>Mathu Soothanan</h2>
-            <h2>632378337</h2>
-            <a href="mailto:mathusundar129@gmail.com">mathusundar129@gmail.com</a>
-            <h3>Dindigul</h3>
-        </center>
-        <hr>
-        <h2>ADDITIONAL QUALIFICATION</h2>
-        <ul>
-            <li>Certification for Basic UI/UX</li>
-            <li>Basic in Tally</li>
-            <li>Basic in Java</li>
-            <li>Basic in Python</li>
-        </ul>
-        <hr>
-        <h2>STRENGTH</h2>
-        <ul>
-            <li>Hardworking and interested in learning new things. I give my full potential to do any job or work. I am slightly interested in editing.</li>
-        </ul>
-        <hr>
-        <h2>PERSONAL DETAILS</h2>
-        <ul>
-            <li>Name: Mathusoothanan S</li>
-            <li>DOB: 29/03/2003</li>
-            <li>Age: 21</li>
-            <li>Gender: Male</li>
-            <li>Languages: Tamil, English, French</li>
-        </ul>
-        <hr>
-        <h2>EDUCATION QUALIFICATION</h2>
-        <table style="width: 50%;">
-            <tr>
-                <th>QUALIFICATION</th>
-                <th>INSTITUTION</th>
-                <th>PERCENTAGE</th>
-            </tr>
-            <tr>
-                <td>SSLC</td>
-                <td>SSM Matriculation Hr. Sec School</td>
-                <td>60%</td>
-            </tr>
-            <tr>
-                <td>HSC</td>
-                <td>SSM Matriculation Hr. Sec School</td>
-                <td>58%</td>
-            </tr>
-            <tr>
-                <td>BCA (UG)</td>
-                <td>GTN College</td>
-                <td>71%</td>
-            </tr>
-            <tr>
-                <td>MCA (PG)</td>
-                <td>Madurai Kamaraja University</td>
-                <td>Passing</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>HOBBY</h2>
-        <ul>
-            <li>Playing mobile game</li>
-            <li>Dancing</li>
-            <li>Drawing</li>
-            <li>cricket</li>
-        </ul>
-        <hr>
-        <h2>DECLARATION</h2>
-        <p>I assure that if I get this job, I would do it sincerely.</p>
-        <hr>
-        <h2>Yours sincerely</h1>
-        <p>Mathu Soothanan S</p>
-        <hr>
-    </main>
+    <center>
+        <h1>Resume</h1>
+        <img style="height: 200px; border-radius: 50%;" src="msd.jpg" alt="Mathu Soothanan">
+        <h2>Mathu Soothanan</h2>
+        <h2>632378337</h2>
+        <a href="mailto:mathusundar129@gmail.com">mathusundar129@gmail.com</a>
+        <h3>Dindigul</h3>
+    </center>
+    <hr>
+    <h2>ADDITIONAL QUALIFICATION</h2>
+    <ul>
+        <li>Certification for Basic UI/UX</li>
+        <li>Basic in Tally</li>
+        <li>Basic in Java</li>
+        <li>Basic in Python</li>
+    </ul>
+    <hr>
+    <h2>STRENGTH</h2>
+    <ul>
+        <li>Hardworking and interested in learning new things. I give my full potential to do any job or work. I am slightly interested in editing.</li>
+    </ul>
+    <hr>
+    <h2>PERSONAL DETAILS</h2>
+    <ul>
+        <li>Name: Mathusoothanan S</li>
+        <li>DOB: 29/03/2003</li>
+        <li>Age: 21</li>
+        <li>Gender: Male</li>
+        <li>Languages: Tamil, English, French</li>
+    </ul>
+    <hr>
+    <h2>EDUCATION QUALIFICATION</h2>
+    <table style="width: 50%;">
+        <tr>
+            <th>QUALIFICATION</th>
+            <th>INSTITUTION</th>
+            <th>PERCENTAGE</th>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>SSM Matriculation Hr. Sec School</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>SSM Matriculation Hr. Sec School</td>
+            <td>58%</td>
+        </tr>
+        <tr>
+            <td>BCA (UG)</td>
+            <td>GTN College</td>
+            <td>71%</td>
+        </tr>
+        <tr>
+            <td>MCA (PG)</td>
+            <td>Madurai Kamaraja University</td>
+            <td>Passing</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>HOBBY</h2>
+    <ul>
+        <li>Playing mobile game</li>
+        <li>Dancing</li>
+        <li>Drawing</li>
+        <li>Cricket</li>
+    </ul>
+    <hr>
+    <h2>DECLARATION</h2>
+    <p>I assure that if I get this job, I would do it sincerely.</p>
+    <hr>
+    <h2>Yours sincerely</h2>
+    <p>Mathu Soothanan S</p>
+    <hr>
+
     <script>
-        
-        const toggleModeButton = document.getElementById('toggle-mode');
-        
-        toggleModeButton.addEventListener('click', function(e) {
-            e.preventDefault(); 
-            document.body.classList.toggle('light-mode');
-            document.body.classList.toggle('dark-mode');
-            const nav = document.querySelector('.bar');
-            nav.classList.toggle('dark-mode');
-            nav.classList.toggle('light-mode');
+        const toggleButton = document.getElementById('toggle-mode');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'DarkMode';
+            } else {
+                toggleButton.textContent = 'lightMode';
+            }
         });
     </script>
 </body>
 </html>
- 
