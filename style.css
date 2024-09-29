@@ -33,17 +33,12 @@ body {
   text-decoration: none;
   margin-left: 5%;
 }
-img {
-
+img 
+{
   border-radius: 50%;    
-  padding: 10%; 
+  padding: 10%;
   float: right;
 }
-
-.img {
-  animation: drop-in 1000ms;
-}
-
 h1 span {
   color: aqua;
 }
