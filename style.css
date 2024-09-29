@@ -95,9 +95,6 @@ h3
     padding-left: 40%;
     padding-bottom: 30%;
 }
-body {
-  transition: background-color 0.5s, color 0.5s;
-}
 
 .light-mode {
   background-color: #ffffff;
