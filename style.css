@@ -33,16 +33,19 @@ body {
   text-decoration: none;
   margin-left: 5%;
 }
-img {
-  border-radius: 50%;    
+.img {    
   padding: 100px;
   float: right;
 }
-
-.img {
-  animation: drop-in 1000ms;
+.img4
+{
+ float: right;
+ padding: 150px;
 }
-
+img
+{
+  border-radius: 50%;
+}
 h1 span {
   color: aqua;
 }
